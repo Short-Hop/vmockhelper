@@ -16,8 +16,6 @@ github.com/DataDog/datadog-go/v5/statsd
 # github.com/Microsoft/go-winio v0.5.1
 github.com/Microsoft/go-winio
 github.com/Microsoft/go-winio/pkg/guid
-# github.com/Short-Hop/vrender v0.0.0-20220627151811-46a759f2822e
-github.com/Short-Hop/vrender
 # github.com/aws/aws-sdk-go v1.23.20
 github.com/aws/aws-sdk-go/aws
 github.com/aws/aws-sdk-go/aws/awserr
@@ -87,6 +85,8 @@ github.com/mattheath/kala/bigflake
 github.com/mattheath/kala/util
 # github.com/pborman/uuid v1.2.0
 github.com/pborman/uuid
+# github.com/short-hop/vrender v0.0.0-20220627153244-92770d73a4ba
+github.com/short-hop/vrender
 # github.com/vendasta/gosdks/config v1.1.0
 github.com/vendasta/gosdks/config
 # github.com/vendasta/gosdks/logging v1.15.0

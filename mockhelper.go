@@ -10,7 +10,7 @@ import (
 	"strings"
 	"github.com/golang/mock/gomock"
 	"github.com/vendasta/gosdks/logging"
-	"github.com/Short-Hop/vrender"
+	"github.com/short-hop/vrender"
 )
 
 const mockFMT = "\n%s.EXPECT().%s(%s).Return(%s)\n"
