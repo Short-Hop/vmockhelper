@@ -45,6 +45,8 @@ github.com/DataDog/datadog-go/v5 v5.0.2/go.mod h1:ZI9JFB4ewXbw1sBnF4sxsR2k1H3xjV
 github.com/Microsoft/go-winio v0.5.0/go.mod h1:JPGBdM1cNvN/6ISo+n8V5iA4v8pBzdOpzfwIujj1a84=
 github.com/Microsoft/go-winio v0.5.1 h1:aPJp2QD7OOrhO5tQXqQoGSJc+DjDtWTGLOmNyAm6FgY=
 github.com/Microsoft/go-winio v0.5.1/go.mod h1:JPGBdM1cNvN/6ISo+n8V5iA4v8pBzdOpzfwIujj1a84=
+github.com/Short-Hop/vrender v0.0.0-20220627151811-46a759f2822e h1:LaodN7S4IMBb7bhdGAet0rWeys32vtEB8xpCl57IDBo=
+github.com/Short-Hop/vrender v0.0.0-20220627151811-46a759f2822e/go.mod h1:UAhRNBx0ACoSxxZkYaRInOT1VSm7C9fMBmpKRXauUvo=
 github.com/aws/aws-sdk-go v1.23.20 h1:2CBuL21P0yKdZN5urf2NxKa1ha8fhnY+A3pBCHFeZoA=
 github.com/aws/aws-sdk-go v1.23.20/go.mod h1:KmX6BPdI08NWTb3/sm4ZGu5ShLoqVDhKgpiN924inxo=
 github.com/census-instrumentation/opencensus-proto v0.2.1 h1:glEXhBS5PSLLv4IXzLA5yPRVX4bilULVyxxbrfOtDAk=
@@ -165,8 +167,6 @@ github.com/vendasta/gosdks/tracing v0.2.0/go.mod h1:AAVUC8541NsDmZrBvcI1CmwTUZSt
 github.com/vendasta/gosdks/verrors v1.0.0/go.mod h1:WmvtGCTIR5InDCUHLIlzremKghVbWR5+ZX0HgOLQd0k=
 github.com/vendasta/gosdks/verrors v1.4.0 h1:rsGs5BGjtslmMh9Ixl95HCmaQKHhNfBSOQZL53yGLN4=
 github.com/vendasta/gosdks/verrors v1.4.0/go.mod h1:XDeqaRiAOFxKwfwF5jxbCbv21ZothVskg5Fae+uxUIE=
-github.com/vendasta/gosdks/vrender v0.0.0-20220617214120-06c5375d0443 h1:pSUSEBew24rDSB9UCa2PWt9gz6S/W91i+tlC74c0nvw=
-github.com/vendasta/gosdks/vrender v0.0.0-20220617214120-06c5375d0443/go.mod h1:ILdVCGrpu+NquY9DJUDUlcDhIIOabWZMfwX0fe7id8A=
 github.com/yuin/goldmark v1.1.25/go.mod h1:3hX8gzYuyVAZsxl0MRgGTJEmQBFcNTphYh9decYSb74=
 github.com/yuin/goldmark v1.1.27/go.mod h1:3hX8gzYuyVAZsxl0MRgGTJEmQBFcNTphYh9decYSb74=
 github.com/yuin/goldmark v1.1.32/go.mod h1:3hX8gzYuyVAZsxl0MRgGTJEmQBFcNTphYh9decYSb74=

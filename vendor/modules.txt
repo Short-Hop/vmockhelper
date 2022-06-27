@@ -16,6 +16,8 @@ github.com/DataDog/datadog-go/v5/statsd
 # github.com/Microsoft/go-winio v0.5.1
 github.com/Microsoft/go-winio
 github.com/Microsoft/go-winio/pkg/guid
+# github.com/Short-Hop/vrender v0.0.0-20220627151811-46a759f2822e
+github.com/Short-Hop/vrender
 # github.com/aws/aws-sdk-go v1.23.20
 github.com/aws/aws-sdk-go/aws
 github.com/aws/aws-sdk-go/aws/awserr
@@ -95,8 +97,6 @@ github.com/vendasta/gosdks/statsd
 github.com/vendasta/gosdks/tracing
 # github.com/vendasta/gosdks/verrors v1.4.0
 github.com/vendasta/gosdks/verrors
-# github.com/vendasta/gosdks/vrender v0.0.0-20220617214120-06c5375d0443
-github.com/vendasta/gosdks/vrender
 # go.opencensus.io v0.22.4
 go.opencensus.io
 go.opencensus.io/internal
