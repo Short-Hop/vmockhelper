@@ -140,6 +140,10 @@ func (s *traverseState) render(buf *bytes.Buffer, ptrs int, v reflect.Value, imp
 
 		if vt.Name() == "Time" && v.CanInterface() {
 			t := v.Interface().(time.Time)
+			if t.IsZero() {
+				buf.WriteString("time.Time{}")
+				return
+			}
 			buf.WriteString(fmt.Sprintf("time.Date(%d, %d, %d, %d, %d, %d, %d, time.UTC)", t.Year(), t.Month(), t.Day(), t.Hour(), t.Minute(), t.Second(), t.Nanosecond()))
 			return
 		}
