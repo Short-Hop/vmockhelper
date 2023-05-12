@@ -3,14 +3,15 @@ package vmockhelper
 import (
 	"context"
 	"fmt"
-	"github.com/vendasta/gosdks/config"
 	"os"
 	"os/exec"
 	"reflect"
 	"strings"
+
 	"github.com/golang/mock/gomock"
-	"github.com/vendasta/gosdks/logging"
 	"github.com/short-hop/vrender"
+	"github.com/vendasta/gosdks/config"
+	"github.com/vendasta/gosdks/logging"
 )
 
 const mockFMT = "\n%s.EXPECT().%s(%s).Return(%s)\n"
@@ -28,6 +29,12 @@ func GetCredentials(env config.Env) error {
 		return err
 	}
 	return os.Setenv("VENDASTA_APPLICATION_CREDENTIALS_JSON", string(out))
+}
+
+func NewFilledType(t reflect.Type) reflect.Value {
+	value := reflect.New(t).Interface()
+	vrender.Fill(value)
+	return reflect.ValueOf(value).Elem()
 }
 
 // MockCallsAndPrintExpected takes a gomock interface and alias, automatically creates an expected call for all methods,
@@ -62,11 +69,24 @@ func MockCallsAndPrintExpected(gomockObject interface{}, mockAlias string, mockR
 				if len(mockResponseArgs) > i && mockResponseArgs[i] != nil {
 					returns = append(returns, reflect.ValueOf(mockResponseArgs[i]))
 				} else {
-					returns = append(returns, reflect.Zero(methodType.Out(i)))
+					if !record {
+						returns = append(returns, reflect.Zero(methodType.Out(i)))
+					} else {
+						returns = append(returns, NewFilledType(methodType.Out(i)))
+					}
 				}
 			}
 			inputString := valuesToCodeString(args)
 			returnString := valuesToCodeString(returns)
+
+			if record {
+				recordedCalls = append(recordedCalls, Call{
+					method:  method.Name,
+					alias:   mockAlias,
+					args:    args,
+					returns: returns,
+				})
+			}
 
 			logging.Alertf(context.Background(), fmt.Sprintf(mockFMT, mockAlias, method.Name, inputString, returnString))
 			return returns

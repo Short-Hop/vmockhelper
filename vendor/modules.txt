@@ -85,7 +85,7 @@ github.com/mattheath/kala/bigflake
 github.com/mattheath/kala/util
 # github.com/pborman/uuid v1.2.0
 github.com/pborman/uuid
-# github.com/short-hop/vrender v0.0.0-20220627170640-e544a7bea997
+# github.com/short-hop/vrender v1.2.2
 github.com/short-hop/vrender
 # github.com/vendasta/gosdks/config v1.1.0
 github.com/vendasta/gosdks/config
