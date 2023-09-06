@@ -80,3 +80,6 @@ data to work with you can easily copy and paste that data into a test case.
 The code printed from these functions represents the actual data the services received and returned during the test run.
 It is still up to the whoever is writing the tests to check those inputs and outputs and make sure they are matching the
 values we expect to see.
+
+### Updating and publishing steps:
+https://go.dev/doc/modules/publishing

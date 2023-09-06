@@ -53,6 +53,8 @@ github.com/aws/aws-sdk-go/service/sts/stsiface
 github.com/census-instrumentation/opencensus-proto/gen-go/agent/common/v1
 github.com/census-instrumentation/opencensus-proto/gen-go/metrics/v1
 github.com/census-instrumentation/opencensus-proto/gen-go/resource/v1
+# github.com/davecgh/go-spew v1.1.1
+github.com/davecgh/go-spew/spew
 # github.com/golang/groupcache v0.0.0-20200121045136-8c9f03a8e57e
 github.com/golang/groupcache/lru
 # github.com/golang/mock v1.6.0
@@ -85,8 +87,12 @@ github.com/mattheath/kala/bigflake
 github.com/mattheath/kala/util
 # github.com/pborman/uuid v1.2.0
 github.com/pborman/uuid
+# github.com/pmezard/go-difflib v1.0.0
+github.com/pmezard/go-difflib/difflib
 # github.com/short-hop/vrender v1.2.2
 github.com/short-hop/vrender
+# github.com/stretchr/testify v1.7.5
+github.com/stretchr/testify/assert
 # github.com/vendasta/gosdks/config v1.1.0
 github.com/vendasta/gosdks/config
 # github.com/vendasta/gosdks/logging v1.15.0
@@ -281,3 +287,5 @@ google.golang.org/protobuf/types/known/fieldmaskpb
 google.golang.org/protobuf/types/known/structpb
 google.golang.org/protobuf/types/known/timestamppb
 google.golang.org/protobuf/types/known/wrapperspb
+# gopkg.in/yaml.v3 v3.0.1
+gopkg.in/yaml.v3

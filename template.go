@@ -4,19 +4,20 @@ const template = `
 func Test_{{methodName}}(t *testing.T) {
 	type testCase struct {
 		name             string
-		expectedResponse interface{}
-		expectedErr      error
+        {{inputTypes}}
+		{{outputTypes}}
 	}
 	cases := []*testCase{
-		{},
+		{
+			name: "Test {{methodName}}",
+            {{testValues}}
+		},
 	}
 
 	for _, c := range cases {
 		t.Run(c.name, func(t *testing.T) {
 			ctx := context.Background()
 			ctrl := gomock.NewController(t)
-
-			vmockhelper.Record()
 
 			{{mocks}}
 
@@ -26,12 +27,9 @@ func Test_{{methodName}}(t *testing.T) {
 				{{fields}}
 			}
 
-			resp, err := s.{{methodName}}() // TODO: set args
+			{{outputs}} := s.{{methodName}}({{inputs}})
 
-			vmockhelper.Record()
-
-			assert.Equal(t, c.expectedResponse, resp)
-			assert.Equal(t, c.expectedErr, err)
+			{{asserts}}
 		})
 	}
 }`
