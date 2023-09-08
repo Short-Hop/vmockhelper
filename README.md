@@ -2,6 +2,10 @@
 
 This package contains some helper functions for writing tests using [gomock](https://github.com/golang/mock) mocks
 
+## Video Walkthrough
+A video example of how to use this package can be found [here](https://www.youtube.com/watch?v=kVd3pP2axZw)
+
+
 ## Functions:
 
 ### MockCallsAndPrintExpected
